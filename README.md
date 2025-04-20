@@ -168,16 +168,3 @@ At each stage, the orchestrator:
 - Executes the appropriate functions with recommended parameters
 - Documents decisions and saves outputs
 
-## Contributing
-
-Contributions are welcome! Here are some ways you can contribute:
-
-- Add new feature engineering techniques
-- Implement additional machine learning models
-- Improve data visualization options
-- Enhance the AI orchestrator with new capabilities
-- Add support for additional AI backends beyond Gemini
-
-## License
-
-This project is available under the MIT License.

@@ -1,0 +1,339 @@
+2025-04-13 17:48:00,053 - AIOrchestrator - WARNING - Couldn't use model 'gemini-pro', trying alternatives: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-04-13 17:48:00,053 - AIOrchestrator - INFO - Trying alternative model: models/gemini-1.5-pro-latest
+2025-04-13 17:48:00,720 - AIOrchestrator - INFO - Successfully connected using model: models/gemini-1.5-pro-latest
+2025-04-13 17:48:00,721 - AIOrchestrator - INFO - Initialized Gemini model: models/gemini-1.5-pro-latest
+2025-04-13 17:48:00,721 - AIOrchestrator - INFO - Created output directories in orchestrator_output
+2025-04-13 17:48:00,721 - AIOrchestrator - INFO - Starting AI-orchestrated data science pipeline for data/laptops.csv
+2025-04-13 17:48:00,721 - AIOrchestrator - INFO - Step 1: Getting dataset recommendations
+2025-04-13 17:48:00,833 - AIOrchestrator - ERROR - Error querying Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2025-04-13 17:48:00,834 - AIOrchestrator - INFO - Extracted retry delay of 59 seconds
+2025-04-13 17:48:00,834 - AIOrchestrator - INFO - Rate limit exceeded. Waiting for 59 seconds before retrying...
+2025-04-13 17:48:59,946 - AIOrchestrator - ERROR - Retry also failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-04-13 17:48:59,949 - AIOrchestrator - ERROR - Error parsing Gemini response: Extra data: line 3 column 1 (char 4)
+2025-04-13 17:48:59,949 - AIOrchestrator - ERROR - Response: Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+] (after waiting 59 seconds)
+2025-04-13 17:48:59,950 - AIOrchestrator - INFO - Step 2: Running exploratory data analysis
+2025-04-13 17:48:59,950 - AIOrchestrator - INFO - Target column: final_price
+2025-04-13 17:49:00,014 - AIOrchestrator - INFO - Missing values detected: 1417 total
+2025-04-13 17:49:00,014 - AIOrchestrator - INFO - Columns with missing values: ['gpu', 'storage_type', 'screen']
+2025-04-13 17:49:00,238 - AIOrchestrator - ERROR - Error creating missing_values plot: Unsupported plot type: missing_values
+2025-04-13 17:49:00,288 - AIOrchestrator - INFO - Created missing values plot: error_missing_values.png
+2025-04-13 17:49:00,288 - AIOrchestrator - INFO - Processing visualization recommendation: distribution
+2025-04-13 17:49:00,399 - AIOrchestrator - ERROR - Error querying Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2025-04-13 17:49:00,399 - AIOrchestrator - INFO - Extracted retry delay of 59 seconds
+2025-04-13 17:49:00,399 - AIOrchestrator - INFO - Rate limit exceeded. Waiting for 59 seconds before retrying...
+2025-04-13 17:49:59,491 - AIOrchestrator - ERROR - Retry also failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-04-13 17:49:59,495 - AIOrchestrator - INFO - Successfully parsed plot parameters: {}
+2025-04-13 17:49:59,495 - AIOrchestrator - INFO - Processing visualization recommendation: correlation
+2025-04-13 17:49:59,617 - AIOrchestrator - ERROR - Error querying Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-04-13 17:49:59,617 - AIOrchestrator - INFO - Rate limit exceeded. Waiting for 30 seconds before retrying...
+2025-04-13 20:09:57,370 - AIOrchestrator - WARNING - Couldn't use model 'gemini-pro', trying alternatives: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-04-13 20:09:57,371 - AIOrchestrator - INFO - Trying alternative model: models/gemini-1.5-pro-latest
+2025-04-13 20:09:58,069 - AIOrchestrator - INFO - Successfully connected using model: models/gemini-1.5-pro-latest
+2025-04-13 20:09:58,071 - AIOrchestrator - INFO - Initialized Gemini model: models/gemini-1.5-pro-latest
+2025-04-13 20:09:58,072 - AIOrchestrator - INFO - Created output directories in orchestrator_output
+2025-04-13 20:09:58,072 - AIOrchestrator - INFO - Starting AI-orchestrated data science pipeline for data/laptops.csv
+2025-04-13 20:09:58,072 - AIOrchestrator - INFO - Step 1: Getting dataset recommendations
+2025-04-13 20:09:58,193 - AIOrchestrator - ERROR - Error querying Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 1
+}
+]
+2025-04-13 20:09:58,194 - AIOrchestrator - INFO - Extracted retry delay of 1 seconds
+2025-04-13 20:09:58,194 - AIOrchestrator - INFO - Rate limit exceeded. Waiting for 1 seconds before retrying...
+2025-04-13 20:09:59,284 - AIOrchestrator - ERROR - Retry also failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-04-13 20:09:59,285 - AIOrchestrator - ERROR - Error parsing Gemini response: Extra data: line 3 column 1 (char 4)
+2025-04-13 20:09:59,285 - AIOrchestrator - ERROR - Response: Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+] (after waiting 1 seconds)
+2025-04-13 20:09:59,285 - AIOrchestrator - INFO - Step 2: Running exploratory data analysis
+2025-04-13 20:09:59,286 - AIOrchestrator - INFO - Target column: final_price
+2025-04-13 20:09:59,327 - AIOrchestrator - INFO - Missing values detected: 1417 total
+2025-04-13 20:09:59,327 - AIOrchestrator - INFO - Columns with missing values: ['gpu', 'storage_type', 'screen']
+2025-04-13 20:09:59,521 - AIOrchestrator - ERROR - Error creating missing_values plot: Unsupported plot type: missing_values
+2025-04-13 20:09:59,564 - AIOrchestrator - INFO - Created missing values plot: error_missing_values.png
+2025-04-13 20:09:59,565 - AIOrchestrator - INFO - Processing visualization recommendation: distribution
+2025-04-13 20:09:59,645 - AIOrchestrator - ERROR - Error querying Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-04-13 20:09:59,645 - AIOrchestrator - INFO - Rate limit exceeded. Waiting for 30 seconds before retrying...
+2025-04-13 20:10:29,738 - AIOrchestrator - ERROR - Retry also failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-04-13 20:10:29,740 - AIOrchestrator - INFO - Successfully parsed plot parameters: {}
+2025-04-13 20:10:29,740 - AIOrchestrator - INFO - Processing visualization recommendation: correlation
+2025-04-13 20:10:29,847 - AIOrchestrator - ERROR - Error querying Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-04-13 20:10:29,847 - AIOrchestrator - INFO - Extracted retry delay of 30 seconds
+2025-04-13 20:10:29,847 - AIOrchestrator - INFO - Rate limit exceeded. Waiting for 30 seconds before retrying...
+2025-04-13 20:11:00,029 - AIOrchestrator - ERROR - Retry also failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-04-13 20:11:00,029 - AIOrchestrator - INFO - Successfully parsed plot parameters: {}
+2025-04-13 20:11:00,030 - AIOrchestrator - INFO - Processing visualization recommendation: scatter
+2025-04-13 20:11:00,116 - AIOrchestrator - ERROR - Error querying Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2025-04-13 20:11:00,117 - AIOrchestrator - INFO - Extracted retry delay of 59 seconds
+2025-04-13 20:11:00,117 - AIOrchestrator - INFO - Rate limit exceeded. Waiting for 59 seconds before retrying...
+2025-04-13 20:11:59,241 - AIOrchestrator - ERROR - Retry also failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-04-13 20:11:59,243 - AIOrchestrator - INFO - Successfully parsed plot parameters: {}
+2025-04-13 20:11:59,243 - AIOrchestrator - INFO - No visualization plots were successfully created. Generating default plots.
+2025-04-13 20:11:59,465 - AIOrchestrator - INFO - Step 3: Getting feature engineering plan
+2025-04-13 20:11:59,773 - AIOrchestrator - ERROR - Error querying Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-04-13 20:11:59,773 - AIOrchestrator - INFO - Rate limit exceeded. Waiting for 30 seconds before retrying...
+2025-04-13 20:12:29,863 - AIOrchestrator - ERROR - Retry also failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-04-13 20:12:29,864 - AIOrchestrator - ERROR - Error parsing Gemini response: Extra data: line 3 column 1 (char 4)
+2025-04-13 20:12:29,864 - AIOrchestrator - ERROR - Response: Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+] (after waiting 30 seconds)
+2025-04-13 20:12:29,864 - AIOrchestrator - INFO - Step 4: Applying feature engineering
+2025-04-13 20:12:29,865 - AIOrchestrator - INFO - Processing polynomial features
+2025-04-13 20:12:29,952 - AIOrchestrator - ERROR - Error querying Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-04-13 20:12:29,952 - AIOrchestrator - INFO - Extracted retry delay of 30 seconds
+2025-04-13 20:12:29,953 - AIOrchestrator - INFO - Rate limit exceeded. Waiting for 30 seconds before retrying...
+2025-04-13 20:13:00,022 - AIOrchestrator - ERROR - Retry also failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-04-13 20:13:00,022 - AIOrchestrator - INFO - Generated code for polynomial features:
+Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+] (after waiting 30 seconds)
+2025-04-13 20:13:00,023 - AIOrchestrator - ERROR - Error creating polynomial features: invalid syntax (<string>, line 1)
+2025-04-13 20:13:00,023 - AIOrchestrator - INFO - Saving engineered features to ai_results/data/engineered_features.csv
+2025-04-13 20:13:00,048 - AIOrchestrator - INFO - Step 5: Getting preprocessing plan
+2025-04-13 20:13:00,141 - AIOrchestrator - ERROR - Error querying Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2025-04-13 20:13:00,142 - AIOrchestrator - INFO - Extracted retry delay of 59 seconds
+2025-04-13 20:13:00,142 - AIOrchestrator - INFO - Rate limit exceeded. Waiting for 59 seconds before retrying...
+2025-04-13 20:13:59,223 - AIOrchestrator - ERROR - Retry also failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-04-13 20:13:59,225 - AIOrchestrator - ERROR - Error parsing Gemini response: Extra data: line 3 column 1 (char 4)
+2025-04-13 20:13:59,226 - AIOrchestrator - ERROR - Response: Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+] (after waiting 59 seconds)
+2025-04-13 20:13:59,226 - AIOrchestrator - INFO - Step 6: Applying preprocessing
+2025-04-13 20:13:59,226 - AIOrchestrator - INFO - Handling missing values with strategy: auto
+2025-04-13 20:13:59,259 - AIOrchestrator - INFO - Handling outliers with method: clip
+2025-04-13 20:13:59,276 - AIOrchestrator - INFO - Splitting data with target column: final_price
+2025-04-13 20:13:59,301 - AIOrchestrator - INFO - Step 7: Getting modeling recommendations
+2025-04-13 20:13:59,361 - AIOrchestrator - ERROR - Error querying Gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-04-13 20:13:59,362 - AIOrchestrator - INFO - Rate limit exceeded. Waiting for 30 seconds before retrying...
+2025-04-13 20:14:29,428 - AIOrchestrator - ERROR - Retry also failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-04-13 20:14:29,429 - AIOrchestrator - WARNING - Initial JSON parse failed, attempting cleanup: Expecting value: line 1 column 1 (char 0)
+2025-04-13 20:14:29,431 - AIOrchestrator - ERROR - Failed to parse modeling recommendations: Extra data: line 3 column 1 (char 4)
+2025-04-13 20:14:29,431 - AIOrchestrator - ERROR - Original response: Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+] (after waiting 30 seconds)
+2025-04-13 20:14:29,431 - AIOrchestrator - INFO - Step 8: Training and evaluating models
+2025-04-13 20:14:29,548 - AIOrchestrator - INFO - Training LinearRegression model...
+2025-04-13 20:14:29,552 - AIOrchestrator - INFO - LinearRegression trained. Scores: {'train_rmse': 872.4293937720226, 'test_rmse': 940.9103876424043, 'train_mae': 651.5813831018518, 'test_mae': 677.5417361111112, 'train_r2': 0.05587114367501389, 'test_r2': 0.03992396401671661}
+2025-04-13 20:14:29,552 - AIOrchestrator - INFO - Training Ridge model...
+2025-04-13 20:14:29,557 - AIOrchestrator - INFO - Ridge trained. Scores: {'train_rmse': 872.2593942432594, 'test_rmse': 940.6728019280822, 'train_mae': 649.808071192551, 'test_mae': 676.392596900119, 'train_r2': 0.056239049259913076, 'test_r2': 0.04040875312188685}
+2025-04-13 20:14:29,557 - AIOrchestrator - INFO - Training Lasso model...
+2025-04-13 20:14:29,559 - AIOrchestrator - INFO - Lasso trained. Scores: {'train_rmse': 872.2900785706307, 'test_rmse': 940.625382535405, 'train_mae': 649.4713571697548, 'test_mae': 676.1109431879495, 'train_r2': 0.05617264887599582, 'test_r2': 0.04050549682945681}
+2025-04-13 20:14:29,560 - AIOrchestrator - INFO - Training RandomForest model...
+2025-04-13 20:14:29,613 - AIOrchestrator - INFO - RandomForest trained. Scores: {'train_rmse': 871.2912060529097, 'test_rmse': 943.9498269822965, 'train_mae': 645.7484512683698, 'test_mae': 677.0436362575102, 'train_r2': 0.058332993099738384, 'test_r2': 0.03371124472961906}
+2025-04-13 20:14:29,691 - AIOrchestrator - INFO - Step 9: Generating final report
+2025-04-13 20:14:29,696 - AIOrchestrator - INFO - Final results saved to ai_results/pipeline_results.json
+2025-04-13 20:14:29,696 - AIOrchestrator - INFO - Pipeline completed successfully
