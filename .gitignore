@@ -1,0 +1,6 @@
+.DS_Store/
+.env
+__pycache__/
+ai_results/
+data/laptops_small.csv
+try.py
